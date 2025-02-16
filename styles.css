@@ -75,6 +75,18 @@ html {
   color: #5a4ff7 !important;
   text-decoration: underline;
 }
+.navbar {
+  width: 100%;
+  overflow-x: hidden;
+}
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+.navbar-collapse {
+  width: 100%;
+}
+
 
 .btn-primary {
   background-color: #5a4ff7;
@@ -340,4 +352,43 @@ button:hover {
 /* Keep Button in Old Place */
 .btn-primary {
   margin-top: 10px;
+}
+.aboutus {
+  background-color: #f9f9f9;
+  /* padding: 50px 20px; */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-text {
+  font-size: 1rem; /* Adjusts automatically */
+  line-height: 1.8;
+  color: #333;
+  text-align: justify;
+}
+
+.glow-text {
+  color: #6A5ACD;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #8B4513;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  .custom-text {
+    font-size: 0.95rem; /* Slightly smaller text on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-text {
+    font-size: 0.9rem; /* Even smaller text for better readability */
+  }
+
+  .aboutus {
+    padding: 30px 15px;
+  }
 }
