@@ -283,11 +283,11 @@ button:hover {
       }
   
       .overlay h3 {
-          font-size: 1.2rem; /* Adjust heading size */
+          font-size: 0.8rem; /* Adjust heading size */
       }
   
       .overlay p {
-          font-size: 0.9rem; /* Reduce paragraph size for clarity */
+          font-size: 0.6rem; /* Reduce paragraph size for clarity */
       }
   }
       
