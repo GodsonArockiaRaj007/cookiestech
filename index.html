@@ -184,6 +184,142 @@
     }
   }
 </style>
+
+ <!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Google Font Link -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<div class="container aboutus py-5" id="aboutus">
+  <h1 class="text-center custom-heading">About Us</h1>
+  
+  <div class="row align-items-center">
+    <!-- Image Section -->
+    <div class="col-lg-6 col-md-6 col-sm-12 text-center fade-in-left">
+      <img src="about.jpg" alt="About Us Image" class="img-fluid about-img">
+    </div>
+    
+    <!-- Text Section -->
+    <div class="col-lg-6 col-md-6 col-sm-12 fade-in-right">
+      <p class="custom-text">
+        <strong>Cookies Tech</strong>, founded in <strong class="highlight">2023</strong> and headquartered in <strong>Madurai</strong>, is a dynamic technology company committed to <span class="glow-text">innovation and excellence</span>. We specialize in delivering cutting-edge solutions that empower individuals and businesses to embrace the future of technology with confidence.
+      </p>
+      <p class="custom-text">
+        At <strong>Cookies Tech</strong>, we believe in blending <span class="glow-text">creativity</span> with <span class="glow-text">technology</span> to create impactful solutions that make a difference. Our team is dedicated to <strong>transforming ideas into reality</strong>, fostering growth, and inspiring a generation of tech leaders. Together, we shape a brighter tomorrow.
+      </p>
+      <p class="custom-text">
+        Our mission is to push the boundaries of what's possible in the tech space. With a focus on <strong>user-centric design</strong> and advanced engineering, we bring unique perspectives to every project. From <span class="glow-text">mobile applications</span> to <span class="glow-text">AI-driven platforms</span>, we strive to deliver products that resonate with modern-day challenges and opportunities.
+      </p>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Apply Custom Font */
+  .custom-text, .custom-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+  }
+
+  .custom-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    animation: slideDown 1s ease-in-out;
+    color: #8B4513;
+    font-size: 2rem;
+  }
+
+  .aboutus {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 50px 20px;
+  }
+
+  .about-img {
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .glow-text {
+    color: #6A5ACD;
+    font-weight: bold;
+  }
+
+  .highlight {
+    color: #8B4513;
+  }
+
+  /* Animations */
+  @keyframes slideDown {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeInLeft {
+    from {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeInRight {
+    from {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .fade-in-left {
+    animation: fadeInLeft 1.5s ease-in-out;
+  }
+
+  .fade-in-right {
+    animation: fadeInRight 1.5s ease-in-out;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .custom-text {
+      font-size: 0.95rem;
+    }
+    .fade-in-left, .fade-in-right {
+      animation: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .custom-text {
+      font-size: 0.9rem;
+    }
+    .aboutus {
+      padding: 30px 15px;
+    }
+  }
+</style>
+
+
 <!-- AOS Library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
@@ -196,7 +332,7 @@
 
 <div class="container text-center mt-5" data-aos="fade-up" >
   <div class="spacer"></div>
-  <p class="text-muted fs-3" id="product">Our Products</p>
+  <p class=" fs-3" id="product" style="color: #8B4513; font-size: 2rem; font-weight: bold;">Our Products</p>
   <h3 class="display-8 fw-bold">
     Creating long-term value with entrepreneurial intelligence!
     <span class="text-primary">Our main goal is <u>success.</u></span>
@@ -218,7 +354,7 @@
               </div>
           </div>
          <a href="https://play.google.com/store/search?q=planora&c=apps&hl=en_IN"> 
-            <button class="btn btn-primary mt-3">DOWNLOAD</button>
+            <button class="btn  mt-3" style="background-color: #8B4513; color: black;">DOWNLOAD</button>
          </a>
       </div>
 
@@ -235,7 +371,7 @@
                   </div>
               </div>
           </div>
-          <button class="btn btn-primary mt-3">DOWNLOAD</button>
+          <button class="btn  mt-3" style="background-color: #8B4513; color: black;">DOWNLOAD</button>
       </div>
 
       <!-- Product 3 -->
@@ -253,7 +389,7 @@
                   </div>
               </div>
           </div>
-          <button class="btn btn-primary mt-3">DOWNLOAD</button>
+          <button class="btn  mt-3" style="background-color: #8B4513; color: black;">DOWNLOAD</button>
       </div>
   </div>
 </div>
@@ -279,7 +415,7 @@
               </div>
           </div>
       </div>
-      <p class="small-text" style="color: rgb(0, 0, 0); background:rgba(246, 86, 41, 0.774)">Web Development</p>
+      <p class="small-text" style="color: rgb(0, 0, 0); background:#8B4513">Web Development</p>
   </div>
 
   <div class="feature" data-aos="fade-up" data-aos-delay="200">
@@ -292,7 +428,7 @@
               </div>
           </div>
       </div>
-      <p class="small-text" style="color: black; background:rgba(246, 86, 41, 0.774)">SEO Solutions</p>
+      <p class="small-text" style="color: black; background:#8B4513">SEO Solutions</p>
   </div>
 
   <div class="feature" data-aos="fade-up" data-aos-delay="300">
@@ -305,7 +441,7 @@
               </div>
           </div>
       </div>
-      <p class="small-text" style="color: black; background:rgba(246, 86, 41, 0.774)">Digital Marketing</p>
+      <p class="small-text" style="color: black; background:#8B4513">Digital Marketing</p>
   </div>
 
   <div class="feature" data-aos="fade-up" data-aos-delay="400">
@@ -318,7 +454,7 @@
               </div>
           </div>
       </div>
-      <p class="small-text" style="color: black;background:rgba(246, 86, 41, 0.774)">App Development</p>
+      <p class="small-text" style="color: black;background:#8B4513">App Development</p>
   </div>
 
   <div class="feature" data-aos="fade-up" data-aos-delay="500">
@@ -331,7 +467,7 @@
               </div>
           </div>
       </div>
-      <p class="small-text" style="color: black; background:rgba(246, 86, 41, 0.774)">Influencer Marketing</p>
+      <p class="small-text" style="color: black; background:#8B4513">Influencer Marketing</p>
   </div>
 
   <div class="feature" data-aos="fade-up" data-aos-delay="600">
@@ -344,193 +480,115 @@
               </div>
           </div>
       </div>
-      <p class="small-text" style="color: black; background:rgba(246, 86, 41, 0.774)">Performance Marketing</p>
+      <p class="small-text" style="color: black; background:#8B4513">Performance Marketing</p>
+  </div>
+</div>
+<!-- Client Scrolling Section -->
+<div class="container my-5">
+  <h1 class="text-center mb-4" style="color: #8B4513;">Our Clients</h1>
+  <div class="scrolling-client-details">
+    <div class="scrolling-content" id="scrolling-content">
+      <!-- Client items will be dynamically inserted here -->
+    </div>
   </div>
 </div>
 
-
 <style>
   .scrolling-client-details {
-    height: 300px;
+    width: 90%; /* Increased width */
     overflow: hidden;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    white-space: nowrap;
+    margin: auto; /* Center the section */
   }
 
   .scrolling-content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    animation: scroll 10s linear infinite;
+    flex-wrap: nowrap;
+    animation: scrollLeft 30s linear infinite; /* Slower scrolling */
   }
 
-  .client-item {
+  .client-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 20px 0;
+    width: 350px; /* Increased width */
+    height: 270px; /* Increased height */
+    margin: 0 15px; /* Adjusted spacing */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
     text-align: center;
+    box-sizing: border-box;
   }
 
   .client-logo img {
-    width: 90px;
-    height: auto;
-    border-radius: 4px;
+    width: 100px; /* Ensured uniform width */
+    height: 90px; /* Ensured uniform height */
+    object-fit: cover; /* Ensures all images fill the area evenly */
+    border-radius: 25px;
+   
+  }
+  .client-container h5 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  .client-container p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #555;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  @keyframes scrollLeft {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%); /* Adjusted for smooth looping */
+    }
   }
 </style>
-
-<div class="container my-5">
-  <h1 class="text-center mb-4">Our Clients</h1>
-  <div class="card shadow-sm">
-    <div class="card-body scrolling-client-details">
-      <div class="scrolling-content" id="scrolling-content">
-        <!-- Client items will be duplicated dynamically -->
-      </div>
-    </div>
-  </div>
-</div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const scrollingContent = document.getElementById("scrolling-content");
+
     const clientItems = [
-      { img: "i1.png", name: "Client 1", desc: "Client 1 specializes in IT solutions for modern businesses." },
-      { img: "honey.jpeg", name: "Client 2", desc: "Client 2 provides top-notch SEO and marketing services." },
-      { img: "u.jpg", name: "Client 3", desc: "Client 3 is a leader in e-commerce platform development." }
+      { img: "i1.png", name: "Tech Solutions", desc: "Providing cutting-edge IT services." },
+      { img: "seo.png", name: "SEO Boosters", desc: "Experts in digital marketing & SEO strategies." },
+      { img: "u.jpg", name: "E-Shop Hub", desc: "Innovative e-commerce platform development." }
     ];
 
     function createClientElements() {
       scrollingContent.innerHTML = "";
-      let fullList = [...clientItems, ...clientItems]; // Duplicate items for seamless effect
+      let fullList = [...clientItems, ...clientItems]; // Duplicate for continuous scrolling
       fullList.forEach(client => {
-        let clientItem = document.createElement("div");
-        clientItem.classList.add("client-item", "row", "align-items-center", "justify-content-center");
-        clientItem.innerHTML = `
-          <div class="col-3 text-center client-logo">
+        let clientContainer = document.createElement("div");
+        clientContainer.classList.add("client-container");
+        clientContainer.innerHTML = `
+          <div class="client-logo">
             <img src="${client.img}" alt="${client.name} Logo">
           </div>
-          <div class="col-9">
-            <h5 class="mb-1">${client.name}</h5>
-            <p class="mb-0">${client.desc}</p>
-          </div>
+          <h5>${client.name}</h5>
+          <p>${client.desc}</p>
         `;
-        scrollingContent.appendChild(clientItem);
+        scrollingContent.appendChild(clientContainer);
       });
     }
 
-    function startScrolling() {
-      let scrollAmount = 0;
-      function step() {
-        scrollAmount -= 1;
-        scrollingContent.style.transform = `translateY(${scrollAmount}px)`;
-
-        if (Math.abs(scrollAmount) >= scrollingContent.scrollHeight / 2) {
-          scrollAmount = 0;
-        }
-        requestAnimationFrame(step);
-      }
-      requestAnimationFrame(step);
-    }
-
     createClientElements();
-    startScrolling();
   });
 </script>
-
-  <!-- Bootstrap JS Bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Google Font Link -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-<div class="container aboutus py-5" id="aboutus">
-  <h2 class="text-center">About Us</h2>
-  
-  <div class="row justify-content-center">
-    <div class="col-lg-8 col-md-10 col-sm-12">
-      <p class="custom-text">
-        <strong>Cookies Tech</strong>, founded in <strong class="highlight">2023</strong> and headquartered in <strong>Madurai</strong>, is a dynamic technology company committed to <span class="glow-text">innovation and excellence</span>. We specialize in delivering cutting-edge solutions that empower individuals and businesses to embrace the future of technology with confidence.
-      </p>
-
-      <p class="custom-text">
-        At <strong>Cookies Tech</strong>, we believe in blending <span class="glow-text">creativity</span> with <span class="glow-text">technology</span> to create impactful solutions that make a difference. Our team is dedicated to <strong>transforming ideas into reality</strong>, fostering growth, and inspiring a generation of tech leaders. Together, we shape a brighter tomorrow.
-      </p>
-
-      <p class="custom-text">
-        Our mission is to push the boundaries of what's possible in the tech space. With a focus on <strong>user-centric design</strong> and advanced engineering, we bring unique perspectives to every project. From <span class="glow-text">mobile applications</span> to <span class="glow-text">AI-driven platforms</span>, we strive to deliver products that resonate with modern-day challenges and opportunities.
-      </p>
-    </div>
-  </div>
-</div>
-
-
-
-<style>
-  /* Apply Custom Font */
-  .custom-text, .custom-heading {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    line-height: 1.8;
-    color: #333;
-  }
-
-  .custom-heading {
-    text-align: center;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    animation: slideDown 1s ease-in-out;
-    color: #2F4F4F;
-  }
-
-  .highlight-text {
-    color: #FFD700;
-    animation: colorPulse 2s infinite;
-  }
-
-  .highlight {
-    color: #8B4513;
-    animation: highlight 1.5s infinite;
-  }
-
-  .glow-text {
-    color: #6A5ACD;
-    font-weight: bold;
-    animation: glow 2s ease-in-out;
-  }
-
-  /* Animations */
-  @keyframes slideDown {
-    from {
-      transform: translateY(-20px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-
-  @keyframes glow {
-    0% { text-shadow: 0 0 5px #6A5ACD, 0 0 10px #6A5ACD; }
-    50% { text-shadow: 0 0 20px #6A5ACD, 0 0 30px #6A5ACD; }
-    100% { text-shadow: 0 0 5px #6A5ACD, 0 0 10px #6A5ACD; }
-  }
-
-  @keyframes colorPulse {
-    0%, 100% { color: #FFD700; }
-    50% { color: #FFA500; }
-  }
-
-  @keyframes highlight {
-    0%, 100% { color: #8B4513; }
-    50% { color: #FFD700; }
-  }
-</style>
-
-</div>
 
 
 <section id="team" class="team-section" id="founder" >
