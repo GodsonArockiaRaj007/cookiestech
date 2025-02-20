@@ -1,5 +1,6 @@
 body {
   font-family: 'Arial', sans-serif;
+  
 }
 html {
   scroll-behavior: smooth;
@@ -71,9 +72,12 @@ html {
   visibility: hidden;
 }
 
-.nav-link:hover {
-  color: #5a4ff7 !important;
+.nav-link:hover{
+  color: #8B4513 !important;
   text-decoration: underline;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  
 }
 .navbar {
   width: 100%;
@@ -103,11 +107,7 @@ img:hover {
   transition: all 0.3s ease-in-out;
 }
 
-h1:hover, h3:hover {
-  color: #5a4ff7;
-  transition: all 0.3s ease-in-out;
 
-}
 button {
   transition: background-color 0.3s, transform 0.2s;
 }
@@ -228,8 +228,8 @@ button:hover {
           left: 0;
           width: 100%;
           height: 100%;
-          background:#8B4513;
-          color: black;
+          background:#8b4513d1;
+          color: white;
           padding: 20px;
           text-align: center;
           display: flex;
@@ -239,10 +239,10 @@ button:hover {
           transition: top 0.4s ease-in-out;
       }
       .overlay h3{
-        color: black;
+        color: white;
       }
       .overlay p{
-        color: black;
+        color: white;
       }
       /* On Hover - Slide Hidden Content Up */
       .image-wrapper:hover .overlay {
@@ -356,7 +356,7 @@ button:hover {
   margin-top: 10px;
 }
 .aboutus {
-  background-color: #f9f9f9;
+  /* background-color: #f5f4f4; */
   /* padding: 50px 20px; */
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
