@@ -217,24 +217,56 @@ Our mission is to push the boundaries of what's possible in the tech space. With
 
 <!-- Google Font Link -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-<div class="container aboutus " id="aboutus">
-  <h1 class="text-center custom-heading">About Us</h1>
+<div class="container aboutus" id="aboutus">
+  <h1 class="text-center custom-heading" data-aos="fade-down">About Us</h1>
   
   <div class="row align-items-center">
     <!-- Image Section -->
-    <div class="col-lg-6 col-md-6 col-sm-12 text-center fade-in-left">
-      <img src="about.jpg" alt="About Us Image" class="img-fluid about-img" >
+    <div class="col-lg-6 col-md-6 col-sm-12 text-center" >
+      <img src="about.jpg" alt="About Us Image" class="img-fluid about-img" data-aos="zoom-in">
     </div>
     
     <!-- Text Section -->
-    <div class="col-lg-6 col-md-6 col-sm-12 fade-in-right">
-      <p class="custom-text" style="color: #8B4513; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
-        At Cookies Tech, we combine innovation and technology to create solutions that have a real effect. Our committed staff turns ambitious concepts into reality, encouraging development and motivating the upcoming generation of IT executives. We create a more intelligent and interconnected future together. Redefining the potential of technology is our goal. With a strong emphasis on sophisticated engineering and user-centric design, we provide new and distinctive viewpoints to each project. From user-friendly mobile apps to AI-driven platforms, we are dedicated to providing game-changing products that solve contemporary issues and open up fresh possibilities.
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <p class="custom-text" style="color: #8B4513; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"  data-aos="fade-left" data-aos-delay="0">
+        At Cookies Tech, we combine innovation and technology to create solutions that have a real effect.  
+      </p>
+
+      <p class="custom-text" style="color: #8B4513; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" data-aos="fade-left" data-aos-delay="200">
+        <strong>1. Innovative Solutions:</strong> We harness cutting-edge technology to develop solutions that make a real impact.
+      </p>
+
+      <p class="custom-text" style="color: #8B4513; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" data-aos="fade-left" data-aos-delay="400">
+        <strong>2. Transforming Ideas into Reality:</strong> Our dedicated team brings ambitious concepts to life, driving growth and inspiring future IT leaders.
+      </p>
+
+      <p class="custom-text" style="color: #8B4513; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" data-aos="fade-left" data-aos-delay="600">
+        <strong>3. Building a Smarter Future:</strong> We work towards a more intelligent and interconnected world through technology.
+      </p>
+
+      <p class="custom-text" style="color: #8B4513; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" data-aos="fade-left" data-aos-delay="800">
+        <strong>4. Redefining Technological Potential:</strong> Our goal is to push the boundaries of what technology can achieve.
+      </p>
+
+      <p class="custom-text" style="color: #8B4513; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" data-aos="fade-left" data-aos-delay="1000">
+        <strong>5. Solving Modern Challenges:</strong> From user-friendly mobile apps to AI-driven platforms, we create transformative products that address real-world problems and unlock new opportunities.
       </p>
     </div>
   </div>
 </div>
+
+<!-- AOS Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800, // Animation speed
+    offset: 100,  // Trigger when 100px of the element is in viewport
+    delay: 100,   // Small delay before animation starts
+    once: true    // Animation happens only once
+  });
+</script>
+
 
 <style>
   /* Apply Custom Font */
@@ -694,7 +726,7 @@ font-size: 2vh;
       <!-- Sanjay Kumar.S -->
       <div class="col-lg-4 col-md-6">
         <div class="team-member">
-          <img src="pp.jpg" alt="Sanjay Kumar.S" class="img-fluid">
+          <img src="sanjaycofounder1.jpg" alt="Sanjay Kumar.S" class="img-fluid">
           <div class="member-info">
             <h4>Sanjay Kumar.S</h4>
             <p>Co-Founder, CEO</p>
