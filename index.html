@@ -42,7 +42,7 @@
   });
 </script>
 
-<header class="bg-light py-3">
+<header class=" py-3">
   <div class="container">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -119,13 +119,13 @@ document.getElementById("navbarToggler").addEventListener("click", function () {
       </div>
     </div>
 <div class="spacer"></div>
-<div style="font-family: Arial, sans-serif; padding: 30px; text-align: justify; color: #333; animation: fadeIn 1s ease-in-out;">
+<div style="font-family: Arial, sans-serif; text-align: justify; color: #333; animation: fadeIn 1s ease-in-out;" class="welcome2">
 <div class="spacer"></div>
   <h2 style="color:#8B4513;font-weight: bold; text-align: center; margin-bottom: 20px; text-transform: uppercase; animation: slideDown 1s ease-in-out;">
     Welcome to Cookies Tech
   </h2>
   
-  <p style="font-size: 18px; line-height: 1.8; margin-bottom: 20px; animation: fadeIn 1.5s ease-in-out; color: #8B4513;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+  <p >
     Cookies Tech, founded in 2023 and headquartered in Madurai, is a dynamic technology company committed to innovation and excellence. We specialize in delivering cutting-edge solutions that empower individuals and businesses to embrace the future of technology with confidence.
 
 At Cookies Tech, we believe in blending creativity with technology to create impactful solutions that make a difference. Our team is dedicated to transforming ideas into reality, fostering growth, and inspiring a generation of tech leaders. Together, we shape a brighter tomorrow.
@@ -135,6 +135,27 @@ Our mission is to push the boundaries of what's possible in the tech space. With
 </div>
 
 <style>
+  .welcome2 p{
+    font-size: 18px; line-height: 1.8; margin-bottom: 20px; animation: fadeIn 1.5s ease-in-out; color: #8B4513;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+   @media (max-width: 768px) {
+    .welcome{
+      padding: 0%;
+    }
+    .welcome2 h2{
+      font-size: 2.5vh;
+
+    }
+
+    .welcome2 p{
+      font-size: 2vh;
+      color: #8B4513;
+      /* padding: 5%; */
+      margin: 0%;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      line-height: 1.7;
+    }
+   }
   /* Fade-in animation */
   @keyframes fadeIn {
     from {
@@ -197,13 +218,13 @@ Our mission is to push the boundaries of what's possible in the tech space. With
 <!-- Google Font Link -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-<div class="container aboutus py-5" id="aboutus">
+<div class="container aboutus " id="aboutus">
   <h1 class="text-center custom-heading">About Us</h1>
   
   <div class="row align-items-center">
     <!-- Image Section -->
     <div class="col-lg-6 col-md-6 col-sm-12 text-center fade-in-left">
-      <img src="about.jpg" alt="About Us Image" class="img-fluid about-img">
+      <img src="about.jpg" alt="About Us Image" class="img-fluid about-img" >
     </div>
     
     <!-- Text Section -->
@@ -223,7 +244,9 @@ Our mission is to push the boundaries of what's possible in the tech space. With
     line-height: 1.8;
     color: #333;
   }
-
+  .aboutus {
+  padding: 0 !important;
+}
   .custom-heading {
     text-align: center;
     margin-bottom: 20px;
@@ -234,12 +257,20 @@ Our mission is to push the boundaries of what's possible in the tech space. With
     color: #8B4513;
     font-size: 2rem;
   }
+  @media (max-width: 768px) {
+    .aboutus h1{
+      font-size: 2.5vh;
 
+    }
+    .aboutus p{
+      font-size: 2vh;
+    }
+  }
   .aboutus {
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 50px 20px;
+   
   }
 
   .about-img {
@@ -329,11 +360,31 @@ Our mission is to push the boundaries of what's possible in the tech space. With
     once: true, // Animation only happens once
   });
 </script>
+<style>
 
-<div class="container text-center mt-5" data-aos="fade-up" >
+@media (max-width: 768px) {
+  .products h2{
+    font-size: 2.5vh;
+  }
+  .products h3{
+    text-align: justify;
+    font-size: 2.1vh;
+  }
+  .products {
+font-size: 2vh;
+  }
+  .flip-card-back {
+font-size: 2vh;
+  }
+  .button1{
+    margin-bottom: 10px;
+  }
+}
+</style>
+<div class="container text-center mt-5 products" data-aos="fade-up" >
   <div class="spacer"></div>
-  <p class=" fs-3" id="product" style="color: #8B4513; font-size: 2rem; font-weight: bold;">Our Products</p>
-  <h3 class="display-8 fw-bold" style="color: #8B4513;">
+  <h2 class=" " id="product" style="color: #8B4513;  font-weight: bold;">Our Products<h2>
+  <h3 class=" fw-bold" style="color: #8B4513;">
     Creating long-term value with entrepreneurial intelligence!
     Our main goal is 
   </h3>
@@ -354,7 +405,7 @@ Our mission is to push the boundaries of what's possible in the tech space. With
               </div>
           </div>
          <a href="https://play.google.com/store/search?q=planora&c=apps&hl=en_IN"> 
-            <button class="btn  mt-3" style="background-color: #8B4513; color: white;">DOWNLOAD</button>
+            <button class="btn button1 mt-3" style="background-color: #8B4513; color: white;">DOWNLOAD</button>
          </a>
       </div>
 
@@ -371,7 +422,7 @@ Our mission is to push the boundaries of what's possible in the tech space. With
                   </div>
               </div>
           </div>
-          <button class="btn  mt-3" style="background-color: #8B4513; color: white;">DOWNLOAD</button>
+          <button class="btn button1 mt-3" style="background-color: #8B4513; color: white;">DOWNLOAD</button>
       </div>
 
       <!-- Product 3 -->
@@ -403,7 +454,7 @@ Our mission is to push the boundaries of what's possible in the tech space. With
   });
 </script>
 
-<h2 class=" fs-3" style="color: #8B4513; font-size: 2rem; font-weight: bold; text-align: center;margin-top: 15px;" id="service" > Our Services</h2>
+<h2 class=" featureshead" style="color: #8B4513;  font-weight: bold; text-align: center;margin-top: 15px;" id="service" > Our Services</h2>
 <div class="features">
   <div class="feature" data-aos="fade-up" data-aos-delay="100">
       <div class="feature-content">
@@ -509,22 +560,22 @@ Our mission is to push the boundaries of what's possible in the tech space. With
   }
  
   .client-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 350px; /* Increased width */
-    height: 240px; /* Increased height */
-    margin: 0 15px; /* Adjusted spacing */
-    padding: 20px;
-    border: 3px solid #8b4513d4;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    text-align: center;
-    box-sizing: border-box;
-  }
-
+  flex-shrink: 0; /* Prevents shrinking */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px; /* Ensured uniform width */
+  height: 240px;
+  margin: 0 15px;
+  padding: 20px;
+  border: 3px solid #8b4513d4;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+}
   .client-logo img {
     width: 100px; /* Ensured uniform width */
     height: 90px; /* Ensured uniform height */
@@ -561,6 +612,28 @@ Our mission is to push the boundaries of what's possible in the tech space. With
       transform: translateX(-50%); /* Adjusted for smooth looping */
     }
   }
+  .scrollable-client-details {
+  width: 90%;
+  overflow: hidden; /* Hide the scrollbar */
+  position: relative;
+  white-space: nowrap;
+  margin: auto; /* Center the section */
+  cursor: grab; /* Change cursor to indicate draggable */
+}
+
+.scrolling-content {
+  display: flex;
+  flex-wrap: nowrap;
+  animation: scrollLeft 30s linear infinite; /* Automatic scrolling */
+  flex-shrink: 0; /* Prevent shrinking */
+  cursor: grab;
+}
+
+/* When dragging */
+.scrolling-content:active {
+  cursor: grabbing;
+}
+
 </style>
 
 <script>
@@ -777,7 +850,7 @@ Our mission is to push the boundaries of what's possible in the tech space. With
 
     footer .icons {
       display: flex;
-      justify-content: center;
+      justify-content:left;
       gap: 1.5rem; /* Tailwind's space-x-6 */
       margin: 1rem 0;
     }
@@ -803,9 +876,10 @@ Our mission is to push the boundaries of what's possible in the tech space. With
   </style>
 
 
-  <!-- Footer Section -->
-  <footer>
-    <div class="container">
+<footer>
+  <div class="container1">
+    <!-- Left Section: Contact Details -->
+    <div class="footer-left">
       <div class="mb-4">
         <h3>Contact Us</h3>
         <p>Phone: <a href="tel:9952930953">9952930953</a></p>
@@ -815,19 +889,219 @@ Our mission is to push the boundaries of what's possible in the tech space. With
         <h3>Locations</h3>
         <p>Chennai, Madurai, Kancheepuram</p>
       </div>
-      <div class="icons">
-        <!-- LinkedIn Icon -->
+      <div class="icons "  >
         <a href="https://www.linkedin.com" target="_blank" class="linkedin">
           <i class="fab fa-linkedin"></i>
         </a>
-        <!-- Instagram Icon -->
         <a href="https://www.instagram.com" target="_blank" class="instagram">
           <i class="fab fa-instagram"></i>
         </a>
       </div>
       <p>© 2025 CookiesTech. All Rights Reserved.</p>
     </div>
-  </footer>
+
+    <!-- Right Section: Enquiry Form -->
+    <div class="footer-right">
+      <h3 style="color: #8B4513;text-align: center;">Enquire Now</h3>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="name" style="color: #8B4513; text-align: left;">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email" style="color: #8B4513;text-align: left;">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone" style="color: #8B4513;">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+        </div>
+
+        <div class="form-group">
+          <label for="description" style="color: #8B4513;text-align: left;">Description:</label>
+          <textarea id="description" name="description" placeholder="Describe your enquiry" required></textarea>
+        </div>
+
+        <button type="submit" style="background-color: #8B4513;" >Submit</button>
+      </form>
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    background-color: #8B4513;
+    padding: 20px 0;
+  }
+  
+  
+  .container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .footer-left {
+    flex: 1;
+    max-width: 45%;
+  }
+
+  .footer-right {
+    flex: 1;
+    max-width: 50%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .footer-right h3 {
+    margin-bottom: 10px;
+  }
+
+  .footer-right form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Form Group - Align Labels and Inputs */
+  .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .form-group label {
+    width: 120px; /* Set a fixed width for labels */
+    font-weight: bold;
+    color: #333;
+   
+    margin-right: 10px;
+  }
+  .footer-right input::placeholder,
+.footer-right textarea::placeholder {
+  color: #8B4513; /* Grayish placeholder text */
+  opacity: 1; /* Ensure full visibility */
+}
+  .form-group input,
+  .form-group textarea {
+    flex: 1; /* Make input fields take up remaining space */
+    background-color: #f1f1f1;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .form-group textarea {
+    height: 80px;
+    resize: none;
+  }
+
+  /* Submit Button Styling */
+  .footer-right button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .footer-right button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+    footer .icons {
+       justify-content:center;
+      
+    }
+
+    .footer-left,
+    .footer-right {
+      max-width: 100%;
+    }
+
+    .footer-right {
+      margin-top: 20px;
+    }
+
+    .form-group {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .form-group label {
+      text-align: left;
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  }
+  /* Responsive Design */
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container1 {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    text-align: center;
+  }
+
+
+  .footer-right {
+    order: -1; /* Moves form to the top */
+    max-width: 100%;
+    margin-bottom: 20px; /* Space below form */
+  }
+
+  .footer-left {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center; /* Center icons */
+    gap: 15px;
+  }
+
+  .form-group {
+    flex-direction: column;
+    align-items: center; /* Center align labels and inputs */
+    width: 100%;
+  }
+
+  .form-group label {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 90%; /* Make inputs responsive */
+    text-align: center; /* Center text inside input fields */
+  }
+}
+
+
+
+
+</style>
+
 
 </body>
 </html>

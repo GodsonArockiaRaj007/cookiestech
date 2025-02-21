@@ -82,6 +82,7 @@ html {
 .navbar {
   width: 100%;
   overflow-x: hidden;
+  background-color: white;
 }
 html, body {
   overflow-x: hidden;
@@ -205,6 +206,7 @@ button:hover {
           border-radius: 8px;
       }
       
+      
       .image-wrapper img {
           width: 100%;
           height: 100%;
@@ -270,13 +272,16 @@ button:hover {
             justify-content: center;
             align-items: center;
         }
-    
+    .featureshead{
+      font-size: 2.5vh;
+    }
         .image-wrapper img {
             width: 100%;
             height: 100%;
             object-fit: cover; /* Ensures images are uniform and well-fitted */
         }
     }
+
     @media (max-width: 768px) {
       .overlay {
           padding: 10px;
@@ -284,14 +289,34 @@ button:hover {
       }
   
       .overlay h3 {
-          font-size: 0.8rem; /* Adjust heading size */
+          font-size: 2.5vh; /* Adjust heading size */
       }
   
       .overlay p {
-          font-size: 0.6rem; /* Reduce paragraph size for clarity */
+          font-size: 2vh; /* Reduce paragraph size for clarity */
           font-weight: bold;
       }
   }
+
+  @media (max-width: 768px) {
+    .features {
+        width: 90%; /* Increase width on mobile */
+        max-width: 100%; /* Allow it to expand fully */
+        padding: 20px; /* Reduce padding to fit more content */
+    }
+}
+@media (max-width: 768px) {
+  .features {
+      width: 100%; /* Full width on mobile */
+      padding: 20px; /* Keep some spacing */
+  }
+}
+@media (max-width: 768px) {
+  .feature {
+      width: 90%; /* Make each item wider */
+      margin: 0 auto; /* Center the items */
+  }
+}
       
 
 /* Flip Card Container */
